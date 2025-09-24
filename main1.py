@@ -130,7 +130,7 @@ with col2:
         note = get_note(note_id)
         if note:
             new_t = st.text_input("Title", note["title"])
-            new_c = st.text_area("Content", note["content"])
+            new_c = st.text_area("Content", note["content"], height=500)
             new_s = st.checkbox("⭐ Star (important)", value=note["starred"])
 
             if st.button("Update"):
